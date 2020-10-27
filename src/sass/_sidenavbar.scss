@@ -21,7 +21,7 @@
 }
 
 .sidebars{
-    margin-left: 50px;
+    position: relative;
 
     .bars{
         color: $light-grey;
@@ -29,6 +29,10 @@
         text-transform: capitalize;
         font-weight: 200;       
         margin-bottom: 22px;
+        padding-left: 50px;
+        position: fixed;
+
+        &:nth-last-child()
 
         h6{
             padding-bottom: 5px;
@@ -45,8 +49,8 @@
                 margin: 20px 0;
                 background: #1875F0;
                 opacity: 0.1;
-                top: 6.22%;
-                bottom: 86.05%;
+                // top: 6.22%;
+                // bottom: 86.05%;
                 left: 0;
                 right: 0;
             }
