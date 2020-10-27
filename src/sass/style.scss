@@ -1,0 +1,24 @@
+@import 'config';
+@import 'navbar';
+@import 'sidenavbar';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $light;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App{
+    position: relative;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: relative;
+}
