@@ -1,6 +1,7 @@
 @import 'config';
 @import 'navbar';
 @import 'sidenavbar';
+@import 'section';
 
 *{
     padding: 0;
@@ -18,7 +19,8 @@ body{
 }
 
 .main{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    // margin-right: 30px;
 }

@@ -1,0 +1,50 @@
+.section{
+    margin: 70px 0;
+    width: 78%;
+    height: 100%;
+
+    .grider{
+        display: grid;
+        grid-template-columns: 230px 230px 230px 205px;
+        margin: 10px 50px 10px 30px;
+
+        .card{
+            width: 215px;
+            height: 70px;
+            border-radius: 2px;
+            background-color: #fff;
+            padding: 15px;
+            // margin: 10px 20px;
+        }
+
+        .grid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .paragraph{
+                font-size: $font-size;
+                text-transform: capitalize;
+                color: $light-grey;
+            }
+        }
+    }
+
+    .article{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        height: 329px;
+        margin: 30px;
+
+        .chart{
+            width: 600px;
+            background-color: #fff;
+        }
+    }
+
+    .articles{
+        margin: 30px;
+    }
+
+}
+

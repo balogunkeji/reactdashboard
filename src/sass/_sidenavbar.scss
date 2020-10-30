@@ -1,14 +1,15 @@
 .sidebar{
     background-color: #fff;
-    width: 25%;
+    width: 22%;
     height: 100%;
     position: fixed;
+    // margin-right: 10px;
 
     button{
         background-color: #5adf5a;
         padding: 10px 20px;
         color: white;
-        font-size: 12px;
+        font-size: $font-size;
         text-transform: uppercase;
         margin: 90px 70px 50px 50px;
         border: none;
@@ -29,28 +30,25 @@
         text-transform: capitalize;
         font-weight: 200;       
         margin-bottom: 22px;
-        padding-left: 50px;
-        position: fixed;
-
-        &:nth-last-child()
 
         h6{
             padding-bottom: 5px;
             font-size: 11px;
+            padding-left: 50px;
+
         }
 
         .bars--1{
             display: flex;
              padding: 5px;
              line-height: 15px;
-             color: $light-grey;
+             color: #212121;;
+             padding-left: 50px;
+            
             
              &--para{
                 margin: 20px 0;
-                background: #1875F0;
-                opacity: 0.1;
-                // top: 6.22%;
-                // bottom: 86.05%;
+                background-color:rgba(151, 171, 207, 0.2);
                 left: 0;
                 right: 0;
             }
@@ -59,23 +57,14 @@
              }
 
              &:hover{
-                // position: absolute;
                 left: 0;
                 right: 0;
-                background: #1875F0;
-                opacity: 0.1;
+                background-color:rgba(151, 171, 207, 0.2);
                 top: 6.22%;
                 bottom: 86.05%;
+                cursor: pointer;
              }
 
-            //  &:hover::before{
-            //     // position: absolute;
-            //     left: 0%;
-            //     right: 98.46%;
-            //     top: 6.22%;
-            //     bottom: 86.05%;
-            //     background: #1875F0;
-            // }
         }
 
     }
