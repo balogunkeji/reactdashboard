@@ -84,9 +84,7 @@ function Sidenavbar() {
                 <p>merchant profile</p>
               </div>
           </div>
-              
         </div>
-    
         </div>
       </div>
     );

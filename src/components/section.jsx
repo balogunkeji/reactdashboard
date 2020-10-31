@@ -23,6 +23,38 @@ function Section (){
         },
     ]
 
+    const table = [
+        {
+            text: 'vw',
+            mac: 'Apple Mac Book 15” 250 SSD 12GB',
+            price: '$73430',
+            transaction: '1234567890',
+            time: '12:30',
+            button1: 'reconcilled',
+            icon:<IoIosArrowDown/>
+
+        },
+        {
+            text: 'vw',
+            mac: 'Apple Mac Book 15” 250 SSD 12GB',
+            price: '$73430',
+            transaction: '1234567890',
+            time: '12:30',
+            button1: 'pending',
+            icon:<IoIosArrowDown/>
+        },
+        {
+            text: 'vw',
+            mac: 'Apple Mac Book 15” 250 SSD 12GB',
+            price: '$73430',
+            transaction: '1234567890',
+            time: '12:30',
+            button1: 'unreconciled',
+            icon:<IoIosArrowDown/>
+        },
+        
+    ]
+
     return(
         <div className ='section'>
                 <div className ='grider'>
@@ -119,6 +151,16 @@ function Section (){
             </div>
         </div>
      </div>
+     <div className='table'>
+          <table>
+            <tr>
+              <th></th>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </div>
      </div>
     )
 }
