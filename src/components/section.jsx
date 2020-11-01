@@ -1,6 +1,7 @@
 
 import React, {useState} from 'react';
 import SVG from './svg';
+import Buttons from './button';
 import { IoIosArrowDown,IoIosSearch } from "react-icons/io";
 
 function Section (){
@@ -30,7 +31,7 @@ function Section (){
             price: '$73430',
             transaction: '1234567890',
             time: '12:30',
-            button1: 'reconcilled',
+            // button1: <Button />,
             icon:<IoIosArrowDown/>
 
         },
