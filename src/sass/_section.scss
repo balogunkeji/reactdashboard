@@ -1,6 +1,6 @@
 .section {
   margin: 70px 0;
-  width: 83%;
+  max-width: 83%;
   height: 100%;
 
   .grider {
@@ -115,6 +115,7 @@
       justify-content: space-around;
       margin-top: 20px;
       font-size: 12px;
+      margin-bottom: 40px;
 
       p span {
         color: rgb(73, 73, 226);

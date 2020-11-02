@@ -144,27 +144,27 @@ function Section() {
       <div className='table' style={{ marginLeft: "30px", width: "100%" }}>
         <table style={{ width: "100%" }}>
           <TableRow style={{ background: "#EAEEF0" }}>
-            <TH width='37%'>Item Type</TH>
-            <TH width='8%'>Price</TH>
-            <TH width='15%'>Transaction No</TH>
-            <TH width='5%'>Time</TH>
-            <TH width='17%'></TH>
-            <TH width='2%'></TH>
+            <TH width='40%'>Item Type</TH>
+            <TH width='18%'>Price</TH>
+            <TH width='17%'>Transaction No</TH>
+            <TH width='7%'>Time</TH>
+            <TH width='19%'></TH>
+            <TH width='4%'></TH>
           </TableRow>
 
           {table.map((item, index) => (
             <TableRow key={index}>
-              <TD width='37%'>
+              <TD width='40%'>
                 <span>
                   <TextSpan>{item.text}</TextSpan>
                   {item.mac}
                 </span>
               </TD>
-              <TD width='8%'>{item.price}</TD>
-              <TD width='15%'>{item.transaction}</TD>
-              <TD width='5%'>{item.time}</TD>
-              <TD width='17%'>{item.button1}</TD>
-              <TD width='2%'>{item.icon}</TD>
+              <TD width='18%'>{item.price}</TD>
+              <TD width='17%'>{item.transaction}</TD>
+              <TD width='7%'>{item.time}</TD>
+              <TD width='19%'>{item.button1}</TD>
+              <TD width='4%'>{item.icon}</TD>
             </TableRow>
           ))}
         </table>
@@ -187,8 +187,9 @@ const TextSpan = styled.span`
 
 const TableRow = styled.tr`
   display: flex;
+  font-size: 14px;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px;
   border-bottom: 1px solid #cccfd4;
   align-items: center;
 `;
@@ -196,9 +197,11 @@ const TableRow = styled.tr`
 const TH = styled.th`
   width: ${({ width }) => width && width};
   text-align: left;
+  padding-right: 30px;
 `;
 
 const TD = styled.td`
+  padding-right: 30px;
   width: ${({ width }) => width && width};
 `;
 
@@ -209,7 +212,7 @@ const table = [
     price: "$73420",
     transaction: 3992567890,
     time: "12:30",
-    button1: <Button>Reconcilled</Button>,
+    button1: <Button padding='9px 29px'>Reconcilled</Button>,
     icon: <IoIosArrowDown />,
   },
   {
@@ -218,7 +221,7 @@ const table = [
     price: "$354430",
     transaction: 3432890,
     time: "12:30",
-    button1: <Button color='#EBC315'>Pending</Button>,
+    button1: <Button padding='9px 40px' color='#EBC315;'>Pending</Button>,
     icon: <IoIosArrowDown />,
   },
   {
@@ -227,7 +230,7 @@ const table = [
     price: "$90430",
     transaction: 249567890,
     time: "12:30",
-    button1: <Button color=' #7F8FA4'>Un-reconcilled</Button>,
+    button1: <Button color=' #7F8FA4' padding='9px 18.5px'>Un-reconcilled</Button>,
     icon: <IoIosArrowDown />,
   },
   {
@@ -236,7 +239,7 @@ const table = [
     price: "$73420",
     transaction: 3992567890,
     time: "12:30",
-    button1: <Button>Reconcilled</Button>,
+    button1: <Button padding='9px 29px'>Reconcilled</Button>,
     icon: <IoIosArrowDown />,
   },
   {
@@ -245,7 +248,7 @@ const table = [
     price: "$354430",
     transaction: 3432890,
     time: "12:30",
-    button1: <Button color='#EBC315'>Pending</Button>,
+    button1: <Button padding='9px 40px' color='#EBC315;'>Pending</Button>,
     icon: <IoIosArrowDown />,
   },
   {
@@ -254,7 +257,7 @@ const table = [
     price: "$90430",
     transaction: 249567890,
     time: "12:30",
-    button1: <Button color=' #7F8FA4'>Un-reconcilled</Button>,
+    button1: <Button color=' #7F8FA4' padding='9px 18.5px'>Un-reconcilled</Button>,
     icon: <IoIosArrowDown />,
   },
   {
@@ -263,7 +266,7 @@ const table = [
     price: "$73420",
     transaction: 3992567890,
     time: "12:30",
-    button1: <Button>Reconcilled</Button>,
+    button1: <Button padding='9px 29px'>Reconcilled</Button>,
     icon: <IoIosArrowDown />,
   },
   {
@@ -272,7 +275,7 @@ const table = [
     price: "$354430",
     transaction: 3432890,
     time: "12:30",
-    button1: <Button color='#EBC315'>Pending</Button>,
+    button1: <Button padding='9px 40px' color='#EBC315;'>Pending</Button>,
     icon: <IoIosArrowDown />,
   },
   {
@@ -281,7 +284,8 @@ const table = [
     price: "$90430",
     transaction: 249567890,
     time: "12:30",
-    button1: <Button color=' #7F8FA4'>Un-reconcilled</Button>,
+    button1: <Button color=' #7F8FA4' padding='9px 18.5px'>Un-reconcilled</Button>,
     icon: <IoIosArrowDown />,
   },
+  
 ];

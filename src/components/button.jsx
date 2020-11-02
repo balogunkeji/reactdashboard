@@ -4,7 +4,7 @@ const Button = styled.button`
   border: 1px solid ${({ color }) => (color ? color : "green")};
   color: ${({ color }) => (color ? color : "green")};
   background-color: transparent;
-  padding: 10px 25px;
+  padding: ${({ padding }) => padding && padding};;
   border-radius: 50px;
   position: relative;
   display: flex;
@@ -18,7 +18,7 @@ const Button = styled.button`
     width: 9px;
     height: 9px;
     background-color: ${({ color }) => (color ? color : "green")};
-    border-radius: 50px;
+    border-radius: 50%;
     margin-left: 7.5px;
     top: 11.5px;
     left: 0;
