@@ -83,7 +83,7 @@ function Sidenavbar() {
           <div className='bars'>
             <div className='bars--1'>
               <FiUser />
-              <p>merchant profile</p>
+              <p style>merchant profile</p>
             </div>
           </div>
         </div>

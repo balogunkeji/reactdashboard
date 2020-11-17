@@ -1,11 +1,13 @@
 .section {
     margin: 70px 0;
-    max-width: 80%;
+    margin-left: 100px;
+    // max-width: 100%;
+    width: 80%;
     height: 100%;
     .grider {
         display: grid;
-        grid-template-columns: 230px 230px 230px 205px;
-        margin: 10px 100px 10px 20px;
+        grid-template-columns: 225px 225px 230px 205px;
+        margin: 10px 5px 10px 30px;
         .card {
             width: 215px;
             height: 70px;

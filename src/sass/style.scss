@@ -1,27 +1,26 @@
-@import 'config';
+mi@import 'config';
 @import 'navbar';
 @import 'sidenavbar';
 @import 'section';
-
-*{
+t* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: $light;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App{
+.App {
     position: relative;
 }
 
-.main{
+.main {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    // margin-right: 30px;
+    grid-template-columns: 2fr 4fr;
+    margin-right: 30px;
 }
