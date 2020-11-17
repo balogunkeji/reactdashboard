@@ -1,69 +1,62 @@
 .sidebar {
-  background-color: #fff;
-  max-width: 20%;
-  width: 17%;
-  height: 100%;
-  position: fixed;
-  // margin-right: 10px;
-
-  button {
-    background-color: #5adf5a;
-    padding: 10px 10px;
-    color: white;
-    font-size: $font-size;
-    text-transform: uppercase;
-    margin: 90px 30px 50px 40px;
-    border: none;
-    border-radius: 30px;
-
-    &:focus {
-      outline: none;
+    background-color: #fff;
+    // max-width: 20%;
+    width: 17%;
+    height: 100%;
+    position: fixed;
+    // margin-right: 10px;
+    button {
+        background-color: #5adf5a;
+        padding: 10px 10px;
+        color: white;
+        font-size: $font-size;
+        text-transform: uppercase;
+        margin: 90px 30px 50px 40px;
+        border: none;
+        border-radius: 30px;
+        &:focus {
+            outline: none;
+        }
     }
-  }
 }
 
 .sidebars {
-  position: relative;
-  margin-bottom: 200px;
-
-  .bars {
-    color: $light-grey;
-    font-size: 11px;
-    text-transform: capitalize;
-    font-weight: 200;
-    margin-bottom: 22px;
-
-    h6 {
-      padding-bottom: 5px;
-      font-size: 11px;
-      padding-left: 40px;
+    position: relative;
+    margin-bottom: 200px;
+    .bars {
+        color: $light-grey;
+        font-size: 11px;
+        text-transform: capitalize;
+        font-weight: 200;
+        margin-bottom: 22px;
+        h6 {
+            padding-bottom: 5px;
+            font-size: 11px;
+            padding-left: 40px;
+        }
+        .bars--1 {
+            display: flex;
+            padding: 5px;
+            line-height: 15px;
+            color: #212121;
+            padding-left: 50px;
+            &--para {
+                margin: 20px 0;
+                background-color: rgba(151, 171, 207, 0.2);
+                left: 0;
+                right: 0;
+            }
+            p {
+                padding-left: 10px;
+            }
+            &:hover {
+                left: 0;
+                right: 0;
+                background-color: rgba(151, 171, 207, 0.2);
+                top: 6.22%;
+                bottom: 86.05%;
+                cursor: pointer;
+            }
+        }
     }
-
-    .bars--1 {
-      display: flex;
-      padding: 5px;
-      line-height: 15px;
-      color: #212121;
-      padding-left: 50px;
-
-      &--para {
-        margin: 20px 0;
-        background-color: rgba(151, 171, 207, 0.2);
-        left: 0;
-        right: 0;
-      }
-      p {
-        padding-left: 10px;
-      }
-
-      &:hover {
-        left: 0;
-        right: 0;
-        background-color: rgba(151, 171, 207, 0.2);
-        top: 6.22%;
-        bottom: 86.05%;
-        cursor: pointer;
-      }
-    }
-  }
 }

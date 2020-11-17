@@ -1,151 +1,131 @@
 .section {
-  margin: 70px 0;
-  max-width: 83%;
-  height: 100%;
-
-  .grider {
-    display: grid;
-    grid-template-columns: 230px 230px 230px 205px;
-    margin: 10px 100px 10px 20px;
-
-    .card {
-      width: 215px;
-      height: 70px;
-      border-radius: 2px;
-      background-color: #fff;
-      padding: 15px;
-      // margin: 10px 20px;
+    margin: 70px 0;
+    max-width: 80%;
+    height: 100%;
+    .grider {
+        display: grid;
+        grid-template-columns: 230px 230px 230px 205px;
+        margin: 10px 100px 10px 20px;
+        .card {
+            width: 215px;
+            height: 70px;
+            border-radius: 2px;
+            background-color: #fff;
+            padding: 15px;
+            // margin: 10px 20px;
+        }
+        .grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .paragraph {
+                font-size: $font-size;
+                text-transform: capitalize;
+                color: $light-grey;
+            }
+        }
     }
-
-    .grid {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .paragraph {
-        font-size: $font-size;
+    .article {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        height: 329px;
+        margin: 20px;
+        .chart {
+            width: 590px;
+            background-color: #fff;
+        }
+        .payment {
+            margin-left: 5px;
+            .border {
+                background-color: white;
+                width: 320px;
+                height: 160px;
+                text-transform: capitalize;
+                padding: 10px 20px 10px 20px;
+                line-height: 2;
+                h3 {
+                    position: relative;
+                    padding-bottom: 10px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background: linear-gradient(to right, green 75%, yellow 25%);
+                        height: 4px;
+                        border-bottom: 10px;
+                        border-radius: 5px;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .border2 {
+                margin-top: 5px;
+                background-color: white;
+                width: 320px;
+                height: 160px;
+                text-transform: capitalize;
+                padding: 15px 20px;
+                line-height: 2;
+                h3 {
+                    position: relative;
+                    padding-bottom: 10px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background: linear-gradient(to right, green 75%, yellow 25%);
+                        height: 4px;
+                        border-bottom: 10px;
+                        border-radius: 5px;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .articles {
+        margin-left: 30px;
+        width: 100%;
         text-transform: capitalize;
-        color: $light-grey;
-      }
+        .pay {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            font-size: 12px;
+            margin-bottom: 40px;
+            p span {
+                color: rgb(73, 73, 226);
+                padding: 0 7px;
+            }
+            .search {
+                margin: 0 25px;
+                .input {
+                    border: none;
+                    padding: 2px 200px 2px 10px;
+                    background-color: $light;
+                    border-bottom: 1px solid $light-grey;
+                    outline: none;
+                }
+            }
+            .form {
+                margin-left: 70px;
+                select {
+                    padding: 3px;
+                    outline: none;
+                    background-color: rgb(240, 236, 236);
+                    select option {
+                        background-color: white;
+                    }
+                }
+            }
+        }
     }
-  }
-
-  .article {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    height: 329px;
-    margin: 20px;
-
-    .chart {
-      width: 590px;
-      background-color: #fff;
-    }
-
-    .payment {
-      margin-left: 5px;
-
-      .border {
-        background-color: white;
-        width: 320px;
-        height: 160px;
-        text-transform: capitalize;
-        padding: 10px 20px 10px 20px;
-        line-height: 2;
-
-        h3 {
-          position: relative;
-          padding-bottom: 10px;
-          &::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(to right, green 75%, yellow 25%);
-            height: 4px;
-            border-bottom: 10px;
-            border-radius: 5px;
-          }
-        }
-
-        p {
-          font-size: 14px;
-        }
-      }
-
-      .border2 {
-        margin-top: 5px;
-        background-color: white;
-        width: 320px;
-        height: 160px;
-        text-transform: capitalize;
-        padding: 15px 20px;
-        line-height: 2;
-
-        h3 {
-          position: relative;
-          padding-bottom: 10px;
-          &::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(to right, green 75%, yellow 25%);
-            height: 4px;
-            border-bottom: 10px;
-            border-radius: 5px;
-          }
-        }
-
-        p {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
-  .articles {
-    margin-left: 30px;
-    width: 100%;
-    text-transform: capitalize;
-
-    .pay {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 20px;
-      font-size: 12px;
-      margin-bottom: 40px;
-
-      p span {
-        color: rgb(73, 73, 226);
-        padding: 0 7px;
-      }
-
-      .search {
-        margin: 0 25px;
-
-        .input {
-          border: none;
-          padding: 2px 200px 2px 10px;
-          background-color: $light;
-          border-bottom: 1px solid $light-grey;
-          outline: none;
-        }
-      }
-
-      .form {
-        margin-left: 70px;
-        select {
-          padding: 3px;
-          outline: none;
-          background-color: rgb(240, 236, 236);
-
-          select option {
-            background-color: white;
-          }
-        }
-      }
-    }
-  }
 }
