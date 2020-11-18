@@ -1,7 +1,7 @@
-@import 'config';
-@import 'navbar';
-@import 'sidenavbar';
-@import 'section';
+@import "config";
+@import "navbar";
+@import "sidenavbar";
+@import "section";
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +10,7 @@
 
 body {
     background: $light;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .App {
@@ -19,8 +19,9 @@ body {
 
 .main {
     position: relative;
-    width: 100%;
+    width: 1100px;
+    // overflow: hidden;
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 1fr 4fr;
     margin-right: 30px;
 }
